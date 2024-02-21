@@ -20,7 +20,7 @@ from aleph_alpha_client import Client, CompletionRequest, Prompt
 
 client = Client(token=os.getenv("AA_TOKEN"))
 request = CompletionRequest(
-    prompt=Prompt.from_text("Provide a short description of AI: "),
+    prompt=Prompt.from_text("Provide a short description of AI:"),
     maximum_tokens=64,
 )
 response = client.complete(request, model="luminous-extended")
